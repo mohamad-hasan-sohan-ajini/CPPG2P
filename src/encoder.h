@@ -2,6 +2,7 @@
 #define __TIHU__ENCODER_H
 
 #include <map>
+#include <fstream>
 #include <torch/script.h>
 #include "xcoder.h"
 
@@ -12,7 +13,7 @@ class Encoder : Xcoder {
     map<int, string> index2grapheme;
 
 public:
-    Encoder(const string grapheme2index, const string model_path);
+    Encoder(const string, const string);
     ~Encoder();
 
     at::Tensor forward(string);

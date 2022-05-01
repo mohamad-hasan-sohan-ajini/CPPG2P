@@ -10,6 +10,8 @@ class Xcoder {
 
 public:
     bool load_model(const string);
+    map<string, int> create_symbols2index(const string);
+    map<int, string> create_index2symbols(const string);
 }
 
 #endif
