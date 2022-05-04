@@ -4,6 +4,7 @@
 #include <map>
 #include <fstream>
 #include <torch/script.h>
+
 #include "xcoder.h"
 
 using namespace std;
@@ -17,6 +18,6 @@ public:
     ~Encoder();
 
     at::Tensor forward(string);
-}
+};
 
 #endif

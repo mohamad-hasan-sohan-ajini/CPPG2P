@@ -6,3 +6,10 @@ Encoder::Encoder(const string graphemes_file, const string model_path) {
     index2grapheme = create_index2symbols(graphemes_file);
     load_model(model_path);
 }
+
+
+at::Tensor Encoder::forward(string word) {
+    // create input tensor
+    // model forward pass
+    // return encoded vectors
+}
