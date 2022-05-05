@@ -4,9 +4,9 @@ using namespace std;
 
 
 int main() {
-    string g2p_model_path = "/home/aj/repo/CPPG2P/resources/g2p_script_module_batchfirst.pt";
-    string graphemes_file = "/home/aj/repo/CPPG2P/resources/graphemes.txt";
-    string phonemes_file = "/home/aj/repo/CPPG2P/resources/phonemes.txt";
+    string g2p_model_path = "resources/g2p_script_module_batchfirst.pt";
+    string graphemes_file = "resources/graphemes.txt";
+    string phonemes_file = "resources/phonemes.txt";
 
     string word = "سلام";
 
