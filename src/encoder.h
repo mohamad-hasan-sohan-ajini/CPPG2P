@@ -9,15 +9,16 @@
 
 using namespace std;
 
-class Encoder : Xcoder {
+
+class Encoder : public Xcoder {
     map<string, int> grapheme2index;
     map<int, string> index2grapheme;
 
 public:
     Encoder(const string, const string);
-    ~Encoder();
 
-    at::Tensor forward(string);
+    torch::Tensor get_input_tensor(const string);
+    // torch::Tensor forward(string);
 };
 
 #endif
