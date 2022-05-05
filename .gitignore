@@ -34,3 +34,6 @@
 # LibTorch
 torch_deps
 build
+
+# editor
+.vscode
