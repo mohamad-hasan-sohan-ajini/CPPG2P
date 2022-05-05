@@ -11,11 +11,13 @@ int main() {
     string word = "سلام";
 
     cout << "Test G2P..." << endl;
+    cout << "word: " << word << endl;
     G2P my_g2p(g2p_model_path, graphemes_file, phonemes_file);
     vector<string> result = my_g2p.forward(word);
+    cout << "phonemes: [";
     for (string s : result) {
         cout << s << " ";
     }
-    cout << endl ;
+    cout << "]" << endl ;
     cout << "G2P test is done..." << endl;
 }
