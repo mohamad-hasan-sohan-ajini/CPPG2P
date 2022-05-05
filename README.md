@@ -11,9 +11,9 @@ A trained and converted g2p model plus the corresponding graphemes and phonemes 
 
 
 ## Prerequisites
-The `Pre-cxx11 ABI` version of `Libtorch` for cpu must be downloaded from [here](https://pytorch.org/). The `libtorch` folder and it's contents is a must have to compile this project.
+The `Pre-cxx11 ABI` version of `Libtorch` for cpu must be downloaded from [here](https://pytorch.org/). Extract it in a folder named `torch_deps`. The `torch_deps/libtorch` folder and it's contents is a must have to compile this project.
 
-Also shared objects that are necessary for running the binaries are located in `libtorch/lib`.
+Also shared objects that are necessary for running the binaries are located in `torch_deps/libtorch/lib`.
 
 ## Compilation
 A make file is provided to compile this project, but before running the `make` command, create `obj` and `build` directories.
